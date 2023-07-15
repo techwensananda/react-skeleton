@@ -1,0 +1,17 @@
+
+
+.star {
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  

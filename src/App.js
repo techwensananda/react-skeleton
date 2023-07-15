@@ -1,7 +1,8 @@
 import './App.css';
 // import Articles from './componnets/Articles';
-import ProductList from './componnets/ProductList';
+// import ProductList from './componnets/ProductList';
 import User from './componnets/User';
+import RatingComponent from './componnets/ratings/RatingComponent';
 // import UserList from './componnets/UserList';
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
       <div className='content'>
 {/* <Articles />
 <UserList /> */}
-<ProductList/>
-
+{/* <ProductList/> */}
+<RatingComponent />
 <User/>
     </div>
     </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './ProductList.css';
+import Rating from './ratings/Rating';
 import SkeletonProductCard from './skeletons/SkeletonProductCard';
 
 const ProductList = () => {
@@ -24,7 +25,7 @@ const ProductList = () => {
             <h3 className="product-title">{product.title}</h3>
             <p className="product-price">${product.price}</p>
             <div className="product-rating">
-              {renderStars(product.rating)}
+            <Rating numReviews={2} rating={product.rating} /> 
             </div>
             <div className="product-actions">
               <button className="buy-now-button">Buy Now</button>
@@ -41,14 +42,5 @@ const ProductList = () => {
   );
 };
 
-// Helper function to render the star rating
-const renderStars = rating => {
-  const stars = [];
-  for (let i = 1; i <= 5; i++) {
-    const starClass = i <= rating ? 'star filled' : 'star';
-    stars.push(<span className={starClass} key={i}>&#9733;</span>);
-  }
-  return stars;
-};
 
 export default ProductList;
